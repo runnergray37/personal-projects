@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Precision Development Inc.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="pdi.css" />
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+       $("#myCarousel").carousel({
+           interval : 20000,
+           pause: false
+       });
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+       $("#myCarousel2").carousel({
+           interval : 9000,
+           pause: false
+       });
+    });
+  </script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script> 
+<script>
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+</script>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<div class="navbar">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="images/logo-full.jpg" alt="Precision Development Inc.">
+        </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+		  <li><a href="#inspections">Home Inspections</a></li>
+		  <li><a href="#contact">Contact</a></li>
+		  <li><a href="https://www.facebook.com/PrecisionDevInc/"><span class="fa fa-facebook-square fa-2x" style="color: #0069aa;"></span></a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+    <!--/.container-fluid -->
+  </nav>
+</div>
+    
+<div id="myCarousel2" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel2" data-slide-to="1"></li>
+    <li data-target="#myCarousel2" data-slide-to="2"></li>
+	<li data-target="#myCarousel2" data-slide-to="3"></li>
+	<li data-target="#myCarousel2" data-slide-to="4"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/home3.jpg" alt="Home">
+    </div>
+    <div class="item">
+      <img src="images/tasker-kitchen.jpg" alt="kitchen with wood finish">
+    </div>
+	<div class="item">
+      <img src="images/tbird-apts-complete.jpg" alt="apartments">
+    </div>
+    <div class="item">
+      <img src="images/sbsu.jpg" alt="Aerial View of construction site">
+    </div>
+	<div class="item">
+      <img src="images/diamond-z.jpg" alt="Indoor Horse Arena">
+    </div>
+  </div>
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2></br>About Company Page</h2>
+      <h4>Precision Development has a proven track record on projects such as residential housing,
+      multi-story building, retail, office, hospitality/resort, and warehouse space.</h4> 
+      <p>From financing and plan development, thru project completion and customer care, we are able
+      to assist our clients thru the entire process.</p>
+      <p>Precision Development was started in 1997 in Cedar City, Utah.  Its founder and President, 
+      Dennis M. Gray, has been involved in the construction industry since 1987. He is licensed as a 
+      general contractor in Utah, Alaska, California, and soon to be Arizona.  During his career he 
+      has built close to 1,000 homes and has constructed over 40 separate commercial projects. He is 
+      an expert in leadership. He has served in various capacities in the local community; some of 
+      which include a water board president, Board of Directors member for the Iron County Board of 
+      Realtors and even as a past president of the Iron County Home Builders Association.</p>
+      <p>Superintendent, Tim R. Tasker, graduated from SUU with his Associate of Science. He also 
+      earned his EMT certificate from the State of Utah before joining Precision Development in 2008.  
+      Tim's expertise is in running projects.  He has expert knowledge in the bidding and subcontractor 
+      management phases of construction. Tim's love for learning has lead him to get his general 
+      contractor license in the State of Utah. He has also earned his Lead-Based Paint Renovator 
+      Certification from the Utah Division of Air Quality.</p>
+      <p>Precision Development has rooted its family ties into the Southern Utah area and plans to be 
+      around for generations to come. We are proud members of the Cedar City Chamber of Commerce and 
+      the Iron County Home Builders Association.</p>
+    </div>
+    <div class="col-sm-4 logo slide slideanim">
+	    <h2></br></h2>
+		<img src="images/logo.jpg" />
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div id="portraits" class="col-sm-4">
+      <img src="images/tim.jpg" /> 
+	  <img src="images/dennis.jpg" />
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2>
+      <h4><strong>MISSION:</strong> Our mission is to provide honest, dependable, and quality results 
+      that surpass our clients' expectations. Whether your next project is commercial or residential, 
+      you can expect Precision Development to provide superior workmanship that is both on time and on budget.</h4> 
+      <p><strong>VISION:</strong>Since the creation of our company in 1997, we have been committed to 
+      providing honest, dependable, and quality results that surpass our clients' expectations.
+    </div>
+  </div>
+</div>
+<div id="services" class="container-fluid text-center">
+  <h2></br>SERVICES</h2>
+  <h4>What we offer</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="fa fa-home slideanim" id="house-icon"></span>
+      <h4>CUSTOM HOMES</h4>
+      <p>Custom layout and design</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="fa fa-bank slideanim" id="building-icon"></span>
+      <h4>Commercial Projects</h4>
+      <p>From banks to fire stations</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-lock logo-small slideanim"></span>
+      <h4>10 YEAR Warranty</h4>
+      <p>All our projects are guaranteed to last!</p>
+    </div>
+    </div>
+    <br><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="fa fa-usd slideanim" id="dollar-icon"></span>
+      <h4>BUDGETING AND PLANNING</h4>
+      <p>Assurance through the whole proccess</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-certificate logo-small slideanim"></span>
+      <h4>EXPERIENCE</h4>
+      <p>Over 17 years construction experience locally</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-wrench logo-small slideanim"></span>
+      <h4>HOME/BUILDING INSPECTIONS</h4>
+      <p><a href="#inspections">Click here for more info</a></p>
+    </div>
+  </div>
+</div>
+
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2></br>Portfolio</h2>
+  <h4>A few samples of our quality work</h4>
+  <div class="row text-center">
+    <div class="col-sm-4 slideanim">
+      <div class="thumbnail">
+        <img src="images/tasker-stairs.jpg" alt="Apartments">
+        <p><strong>Stairs by Funder Welding</strong></p>
+        <p>Don't they look great!</p>
+      </div>
+    </div>
+    <div class="col-sm-4 slideanim">
+      <div class="thumbnail">
+        <img src="images/tasker-home.jpg" alt="Home">
+        <p><strong>Custom Homes</strong></p>
+        <p>Custom plans and layouts</p>
+      </div>
+    </div>
+    <div class="col-sm-4 slideanim">
+      <div class="thumbnail">
+        <img src="images/metal-building.jpg" alt="Indoor Rodeo Arena">
+        <p><strong>Commercial Projects</strong></p>
+        <p>From small buildings to large steel construction</p>
+      </div>
+    </div>
+	<div class="col-sm-4 slideanim">
+      <div class="thumbnail">
+        <img src="images/bathroom.jpg" alt="kitchen">
+        <p><strong>Every little detail counts</strong></p>
+        <p>Look at this beautiful kitchen!</p>
+      </div>
+    </div>
+    <div class="col-sm-4 slideanim">
+      <div class="thumbnail">
+        <img src="images/winchester-fire.jpg" alt="Firemen Lockers">
+        <p><strong>Winchester Hills Fire Station</strong></p>
+          <p>Attention to every detail</p>
+      </div>
+    </div>
+    <div class="col-sm-4 slideanim">
+      <div class="thumbnail">
+        <img src="images/pioneer-courthouse.jpg" alt="Brick Courthouse">
+        <p><strong>St George Pioneer Courthouse</strong></p>
+          <p>We also do renovations</p>
+      </div>
+    </div>
+</div>
+
+<h2>What our customers say</h2>
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+	<li data-target="#myCarousel" data-slide-to="3"></li>
+	<li data-target="#myCarousel" data-slide-to="4"></li>
+	<li data-target="#myCarousel" data-slide-to="5"></li>
+	<li data-target="#myCarousel" data-slide-to="6"></li>
+	<li data-target="#myCarousel" data-slide-to="7"></li>
+	<li data-target="#myCarousel" data-slide-to="8"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <h4>"Thank you for our wonderful new home. We absolutely love it. We have really enjoyed working with you, and your sub contractors. We appreciate the honesty, courtesy and respect which you and your contractors treated us, our home, and our future neighbors...The house is beautiful, and the workmanship is solid. You didn't sacrifice quality for time limitations."<br><span style="font-style:normal;">Neil and Shelly</span></h4>
+    </div>
+    <div class="item">
+      <h4>"We absolutely love our new home and thank you all for all the hard work you did...lot of extra time & work & it shows."<br><span style="font-style:normal;">Michael and Joy</span></h4>
+    </div>
+    <div class="item">
+      <h4>"THANK YOU PRECISION DEVELOPMENT...For Building Our Dream House Our Way!"<br><span style="font-style:normal;">Glen and Jeri</span></h4>
+    </div>
+	<div class="item">
+      <h4>"If we ever had it to do over again I wouldn't change a thing, I wouldn't hesitate for 1 minute about having Precision build a home. I would be happy to recommend you guys to any of our friends or Relatives. Thank you so much for doing such a great job. To us this just isn't another house its OUR HOME!"<br><span style="font-style:normal;">Rick and Janette</span></h4>
+    </div>
+	<div class="item">
+      <h4>"Thanks for the nice things you do...and the really nice way you do them! Our home is lovely! Thanks for your patience as we went through the process of building it together."<br><span style="font-style:normal;">Dale and Olene</span></h4>
+    </div>
+	<div class="item">
+      <h4>"Thank you all so very much! This is a special thanks to everyone at Precision Development. While our home was being built, everyone involved was really a pleasure to work with. We truly appreciate everyone's effort to make it a real comfortable experience. In the construction phase all the different crews were truly a lot of help in the design of our home."<br><span style="font-style:normal;">Mike and Betty</span></h4>
+    </div>
+	<div class="item">
+      <h4>"Thank you & your kind staff for the joy you have brought into my life. It was a pleasure doing business with folks like yourself. It helps you realize that there are still honest truthful people in the world. May you stay this way & may the good Lord bless you."<br><span style="font-style:normal;">Beverly</span></h4>
+    </div>
+	<div class="item">
+      <h4>"We are very happy with the finished product and expect to enjoy many years living in it...we are very happy with the speed and professional way our home was built by Precision Development, and we would be glad to highly recommend your company to any others who wish to build a home in the Cedar City area."<br><span style="font-style:normal;">David and Dorothy</span></h4>
+    </div>
+	<div class="item">
+      <h4>"INTEGRITY - 'Integrity is one of several paths. It distinguishes itself from the others because it is the right path, and the only one upon which you will never get lost.' M.H. McKee. Thank you for our beautiful home."<br><span style="font-style:normal;">Chad and Linda</span></h4>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<div id="inspections" class="container-fluid text-center slideanim">
+  <h2></br></h2>
+  <h1>Precision Home Inspections</h1>
+  <img class="center-block img-responsive" src="images/home-inspections.png" alt="home inspections" /> 
+</div>  
+<div id="contact" class="container-fluid contact">
+  <h1 id="contacthead" class="text-center"></br>CONTACT US</h1>
+  <div class="row">
+    <div class="col-sm-5">
+        <h4><span class="glyphicon glyphicon-map-marker"></span>444 S. Main Street #C1</br>&#160;&#160;&#160;Cedar City, UT 84720</h4>
+      <h4></br><span class="glyphicon glyphicon-phone"></span> (435) 867-4729</h4>
+      <h4></br><span class="glyphicon glyphicon-envelope"></span> precisiondevelopmentinc@gmail.com</h4>
+      <h4></br><span class="fa fa-fax"></span> Fax: 1-888-965-9909</h4>
+    </div>
+<?php include 'mail.php';?>
+  <form action="mail.php" method="Post" class="mailer">
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="text" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="message" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <input class="btn btn-default pull-right" type="submit" value="Send"></input>
+        </div>
+      </div> 
+    </div>
+  </form>
+  </div>
+</div>
+<!-- Set height and width with CSS -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+  var myCenter = new google.maps.LatLng(37.669203, -113.062155);
+
+  function initialize() {
+  var mapProp = {
+  center:myCenter,
+  zoom:14,
+  scrollwheel:false,
+  draggable:true,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+  var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+
+  marker.setMap(map);
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Page Designed By Chris Gray</p> 
+</footer>
+</body>
+</html>
